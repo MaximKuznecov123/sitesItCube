@@ -1,0 +1,181 @@
+* {
+    font-family: 'Courier New', Courier, monospace !important;
+    margin: 0;
+    padding: 0;
+}
+h1, p, h2, h3{
+    color: red;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.container1 {
+    height: 80vh;
+    background-image: url(/images/background1.svg);
+
+    text-align: center;
+    padding-top: 10%;
+    position: sticky;
+}
+
+.container1 h1,
+.container2 .text h1 {
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(255, 23, 23);
+
+}
+
+.container1 * {
+    text-transform: uppercase;
+    color: rgb(255, 23, 23);
+}
+
+.container1 p {
+    margin-top: 20px;
+    margin-left: 16%;
+    width: 1000px;
+    font-size: 30px;
+}
+
+.container2 {
+    height: 110vh;
+    background-image: url(/images/background2.svg);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.divider img {
+    z-index: 10;
+    position: absolute;
+    object-fit: cover;
+    height: 20px;
+    width: 100%;
+    overflow: visible;
+    margin-top: 10;
+}
+
+.divider path {
+    stroke: blue;
+}
+
+.cards {
+    width: 87%;
+    height: 100%;
+    position: relative;
+}
+
+.cards .card {
+    position: absolute;
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+    width: 350px;
+    height: 350px;
+    background-color: rgb(255, 170, 0);
+    transition: 0.5s;
+}
+
+.cards .card:nth-child(2) {
+    left: 40em;
+    top: 12em;
+}
+
+.cards .card:nth-child(3) {
+    left: 13em;
+    top: 25em;
+}
+
+.cards .card:nth-child(1) {
+    top: 1em;
+    left: 10em;
+}
+
+.cards .card .hidden{
+    color: red;
+    position: relative;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 15px;
+    width: 100%;
+    max-width: 20%;
+}
+
+.cards .card:hover .hidden {
+    opacity: 1;
+}
+
+.cards .card:hover .main {
+    opacity: 0
+}
+
+.cards .card .main {
+    transition: 0.5s;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.container2 h1 {
+    max-width: 1px;
+}
+
+.cards .card:hover {
+    rotate: 360deg;
+}
+
+.container2 .text {
+    width: 200px;
+}
+
+.container3 {
+    padding-top: 5%;
+    padding-bottom: 20%;
+    background-image: url(/images/background3.svg);
+    display: flex;
+    height: 110vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.container3 h1{
+    margin-left: 30%;
+    text-transform: uppercase;
+    font-size: 80px;
+}
+.projects img{
+    float: left;
+    width: 400px;
+    height: 220px;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+.projects {
+    margin: 40px auto;
+    width: 70%;
+}
+
+.projects:nth-child(3){
+    margin-right: 20px;
+}
+.projects:nth-child(even){
+    margin-left: 20px;
+}
+
+.projects:nth-child(3) img{
+    float:right
+}
+.projects:nth-child(3) .text-box{
+    text-align: end;
+}

@@ -1,0 +1,17 @@
+* {
+    font-weight: 10;
+}
+
+span{
+    font-weight: 900;
+}
+
+.block1, .block2{
+    color: yellowgreen;
+}
+.block1{
+    font-size: xx-large;
+}
+.block2{
+    text-align: center;
+}

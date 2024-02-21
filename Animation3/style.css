@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.block {
+    width:200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+.block:nth-child(1):hover {
+   translate:150px;
+}
+
+.block:nth-child(2):hover {
+    scale:0.5;
+ }
+
+ .block:nth-child(3):hover {
+    rotate:60deg;
+ }
+
+ * {
+    padding: 0;
+    margin: 0;
+}
+
+.block {
+    width:200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+.block:nth-child(1):hover {
+   translate:150px;
+}
+
+.block:nth-child(2):hover {
+    scale:0.5;
+ }
+
+ .block:nth-child(3):hover {
+    rotate:60deg;
+ }
+
+ .block:nth-child(4) { 
+    background-color:blue;
+    transition: background-color 3s, rotate 3s;
+ }
+
+ .block:nth-child(4):hover {
+    background-color:red;
+    rotate: 360deg;
+ }
+
+ 
+ .block:nth-child(5) { 
+    transition: transform 1s ease-in-out 2s;
+ }
+
+ .block:nth-child(5):hover {
+   transform: translateY(-300px);
+ }
+
+ .block:nth-child(6):hover {
+    transform: scale(1.8);
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+ }
+
+ /* Пример2 */
+
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(55, 55, 143), rgb(12, 165, 230));
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 2px;
+}
+
+.box div {
+    position: absolute;
+    width:60px;
+    height:60px;
+    background-color:transparent;
+    border: 6px solid white;
+}
+
+.box div:nth-child(1) {
+    top:12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top:17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top:70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+.box div:nth-child(4) {
+    top:28%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(5) {
+    top:67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+.box div:nth-child(6) {
+    top:80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(7) {
+    top:60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(8) {
+    top:32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+.box div:nth-child(9) {
+    top:90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+.box div:nth-child(10) {
+    top:20%;
+    left: 83%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes  animate{
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1; 
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 50px 20px 70px ;
+}
+
+.cards .card .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(48% 0, 100% 30%, 100% 74%, 50% 100%, 0 75%, 0 28%);
+    transition: 0.5s;
+}
+
+.cards .card:hover .shape {
+    transform: translateY(-30px);
+}
+
+.cards .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -70px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0,0,0, 0.15), transparent, transparent);
+    transition: 0.5s;
+}
+
+.cards .card:hover::before{
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.cards .card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(rgb(55, 55, 143), rgb(12, 165, 230));
+    text-align: center justify;
+    color: aliceblue;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+    flex-wrap: wrap;
+}
+
+.intro:hover{
+    opacity: 1;
+}
