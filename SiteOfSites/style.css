@@ -1,7 +1,9 @@
+
+
 * {
     font-family: 'Courier New', Courier, monospace !important;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 h1, p, h2, h3{
     color: red;
@@ -24,7 +26,7 @@ h1, p, h2, h3{
 
 .container1 h1,
 .container2 .text h1 {
-    font-size: 90px;
+    font-size: 10em;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(255, 23, 23);
@@ -38,13 +40,13 @@ h1, p, h2, h3{
 
 .container1 p {
     margin-top: 20px;
-    margin-left: 16%;
+    margin-left: 30%;
     width: 1000px;
-    font-size: 30px;
+    font-size: 3em;
 }
 
-.container2 {
-    height: 110vh;
+.container2{
+    height: 105vh;
     background-image: url(/images/background2.svg);
     display: flex;
     align-items: center;
@@ -61,10 +63,6 @@ h1, p, h2, h3{
     margin-top: 10;
 }
 
-.divider path {
-    stroke: blue;
-}
-
 .cards {
     width: 87%;
     height: 100%;
@@ -74,40 +72,45 @@ h1, p, h2, h3{
 .cards .card {
     position: absolute;
     clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
-    width: 350px;
-    height: 350px;
+    width: 40em;
+    height: 40em;
     background-color: rgb(255, 170, 0);
     transition: 0.5s;
 }
 
 .cards .card:nth-child(2) {
-    left: 40em;
-    top: 12em;
+    left: 55%;
+    top: 30%;
 }
 
 .cards .card:nth-child(3) {
-    left: 13em;
-    top: 25em;
+    left: 20%;
+    top: 50%;
 }
 
 .cards .card:nth-child(1) {
-    top: 1em;
-    left: 10em;
+    top: 1%;
+    left: 20%;
 }
 
 .cards .card .hidden{
     color: red;
-    position: relative;
     position: absolute;
-    top: 40%;
-    left: 20%;
+    top: 33%;
+    left: 15%;
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: 0.5s;
-    font-size: 15px;
+    font-size: 1.4em;
     width: 100%;
-    max-width: 20%;
+    max-width: 70%;
+    text-align: center;
+}
+.cards .card .hidden h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
 }
 
 .cards .card:hover .hidden {
@@ -115,7 +118,7 @@ h1, p, h2, h3{
 }
 
 .cards .card:hover .main {
-    opacity: 0
+    opacity: 0;
 }
 
 .cards .card .main {
@@ -142,10 +145,10 @@ h1, p, h2, h3{
 
 .container3 {
     padding-top: 5%;
-    padding-bottom: 20%;
     background-image: url(/images/background3.svg);
     display: flex;
-    height: 110vh;
+    min-height: 105vh;
+    padding-bottom: 15vh;
     flex-direction: column;
     flex-wrap: nowrap;
 }
@@ -153,17 +156,22 @@ h1, p, h2, h3{
     margin-left: 30%;
     text-transform: uppercase;
     font-size: 80px;
+    font-size: 10em;
 }
 .projects img{
     float: left;
-    width: 400px;
-    height: 220px;
+    width: 40em;
+    height: 20em;
     border: 5px solid red;
     border-radius: 5px;
 }
 .projects {
     margin: 40px auto;
     width: 70%;
+}
+
+.projects .text-box{
+    font-size: 1.61em;
 }
 
 .projects:nth-child(3){
