@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background:#59b1e1;
+    width: 100%;
+    height: 100vh;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 100px;   
+    color:rgb(236, 195, 118);
+    text-shadow: 5px 5px black;
+}
+
+.clouds{
+    padding-top:50px;
+    width: 100%;
+}
+
+@keyframes animateCloud {
+    0% {
+        margin-left: -500px;
+    }
+
+    100% {
+        margin-left: 100%;
+    }
+}
+
+.cloud {
+    background:#fff;
+    height: 120px;
+    width: 350px;
+    border-radius: 100px;
+    box-shadow: 0 8px 5px (0,0,0,0.1);
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.cloud::after, .cloud::before {
+    background:#fff;
+    content:'';
+    position: absolute;
+}
+
+.cloud::after {
+    border-radius:100px;
+    height: 100px;
+    left: 50px;
+    top:-50px;
+    width: 100px;
+}
+
+.cloud::before {
+    border-radius:200px;
+    height: 180px;
+    right:50px;
+    top: -90px;
+    width: 180px;
+}
+
+.cloud1 {
+    animation: animateCloud 40s linear infinite;
+    transform: scale(0.65);
+    position: absolute;
+}
+
+.cloud2 {
+    animation: animateCloud 20s linear infinite;
+    transform: scale(0.3);
+}
+
+.cloud3 {
+    animation: animateCloud 30s linear infinite;
+    transform: scale(0.5);
+}
+
+.cloud4{
+    animation: animateCloud 15s linear infinite;
+    transform: scale(0.4);
+}
+
+.cloud5 {
+    animation: animateCloud 25s linear infinite;
+    transform: scale(0.4);
+}
+
+.cloud6 {
+    animation: animateCloud 15s linear infinite;
+    transform: scale(0.2);
+}
+
+.cloud7 {
+    animation: animateCloud 35s linear infinite;
+    transform: scale(0.6);
+}
+
+.cloud8 {
+    animation: animateCloud 20s linear infinite;
+    transform: scale(0.45);
+}
+
+.cloud9 {
+    animation: animateCloud 30s linear infinite;
+    transform: scale(0.8);
+}
+
+
+.block2{
+    background:url(./image4/река.jpg);
+    width: 100%;
+    height: 200vh;
+    background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: -20px;
+    
+}
+
+.container{
+    width: 1100px;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .mycard {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    margin: 150px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+.container .mycard .cimg {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top:-150px;
+    left: 20px;
+    z-index: 1;
+}
+
+
+/* Может и ненужно */
+
+
+.container .mycard .cdetail{
+    position: relative;
+    top:-380px;
+    left: 75px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-family: monospace;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    max-width: 250px;
+}
+
+.container .mycard:hover .cdetail {
+    opacity: 1;
+    z-index: 2;
+    visibility: visible;
+}
+
+
+
+.block3 {
+    background:#59b1e1;
+    width: 100%;
+    height: 350vh;
+}
+
+.block3 h1 {
+    font-size: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    color:rgb(235, 255, 148);
+    text-shadow: 5px 5px black;
+}
+
+.container {
+    padding-bottom: 150px;
+    margin: 0 auto;
+    max-width:800px ;
+}
+
+ .content img {
+    width: 80%;
+    height: 80%;
+} 
+
+.section {
+    display: flex;
+    position: relative;
+    margin-left:15%;
+    min-height: 200px;
+}
+
+.section:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.corabls {
+    position: absolute;
+}
+
+.corable img {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes animateCorable1 {
+    0% {
+        margin-left: 1200px;
+        margin-top: 800px;
+    }
+
+    100% {
+        margin-left: -300px;
+        margin-top: 800px;
+    }
+}
+
+.corabl1 {
+    animation: animateCorable1 10s linear infinite;
+}
+
+@keyframes animateCorable2 {
+    0% {
+        margin-left: 1500px;
+        margin-top: 600px;
+    }
+
+    100% {
+        margin-left: 500px;
+        margin-top: 600px;
+    }
+}
+
+.corabl2 {
+    animation: animateCorable2 10s linear infinite;
+    transform: scale(0.8);
+}
+
+
+@keyframes animateCorable3 {
+    0% {
+        margin-left: 1500px;
+        margin-top: 300px;
+    }
+
+    100% {
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+}
+
+.corabl3 {
+    animation: animateCorable3 15s linear infinite;
+    transform: scale(0.3);
+}
+
+
+/* Блок 4 */
+
+
+.block4 {
+    background:#59b1e1;
+    width: 100%;
+    height: 350vh;
+}
+
+.block4 h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 150px;
+    padding-top:170px ;
+    padding-bottom: 20px;
+    color:rgb(235, 255, 148);
+    text-shadow: 5px 5px black;
+}
+
+.projects {
+    width: 400px;
+    margin: auto;
+}
+
+.projects img {
+    width: 300px;
+    height: 200px;
+}
+
+.projects p {
+    margin: 0;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.projects .project {
+    border-top: 2px dashed;
+    border-color: blue;
+    padding: 30px;
+    margin: 0;
+}
+
+.projects .project:nth-child(even) {
+    border-left: 2px dashed;
+    border-color: blue;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px;
+    padding-right: 0;
+}
+
+.projects .project:nth-child(odd) {
+    border-right: 2px dashed;
+    border-color: blue;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px;
+    padding-left:0;
+}
+
+.projects:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+} 
+
+.projects:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+} 
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 60px !important;
+    }
+}

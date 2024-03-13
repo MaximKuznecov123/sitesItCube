@@ -1,0 +1,36 @@
+/* Блок с проектами */
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background:#ff6a00;
+    margin-top: -10px;
+}
+
+.projects-wrapper img{
+    max-width: 420px;
+    border:3px solid white;
+    border-radius:10px;
+    float: left;
+    margin-right: 15px;
+}
+
+.projects-wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+
+.text-box {
+    color: white;
+    margin-bottom: 70px;
+}
+
+.text-box h2 {
+    font-size: 62px;
+    margin: 0;
+}
+
+.text-box p {
+    font-size: 30px;
+}
