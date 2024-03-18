@@ -1,0 +1,39 @@
+ <div class="block3">
+      <div class="container">
+        <div class="top-section">
+         <h1>Дети научатся создавать</h1>
+        </div>
+      </div>
+  
+  
+  
+          <div class="section">
+              <div class="content">
+                <img src="./image4/ostrov1.png" alt="">
+                <div class="text">
+                  <img src="./image4/letter.gif" alt="">
+                </div>
+              </div>
+            </div>
+  
+  
+          <div class="section">
+              <div class="content">
+                <img src="./image4/ostrov1.png" alt="">
+                <div class="text">
+                  <img src="./image4/mult.gif" alt="">
+                </div>
+              </div>
+            </div>
+  
+  
+          <div class="section">
+              <div class="content">
+                <img src="./image4/ostrov1.png" alt="">
+                <div class="text">
+                  <img src="./image4/game.gif" alt="">
+                </div>
+              </div>
+            </div>
+  
+      </div>
