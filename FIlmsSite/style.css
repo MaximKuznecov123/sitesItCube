@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, ul{
+    text-align: center;
+}
+
+header{
+ height: 200px;
+ background-color: rgb(150, 105, 37);
+}
+
+h1{
+    padding-top: 70px;
+    font-size: 70px;
+    color:rgb(40, 188, 40);
+}
+h2{
+    font-size: 50px;
+    color:rgb(152, 181, 37);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn{
+    margin: auto;
+    margin-top: 100px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+/* .btn:hover{
+    animation: animata 10s linear ease-in-out;
+    transition: 10s;
+    transform: translateX(30px);
+    scale: 50;
+    opacity: 0;
+    rotate: 360deg;
+    background: linear-gradient(rgb(152, 215, 56),rgb(234,90,12));
+} 
+ */
