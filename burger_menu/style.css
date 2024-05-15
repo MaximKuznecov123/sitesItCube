@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+.navigation{
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background-color: black;
+    transition: .5s;
+    right: 0;
+}
+
+.navigation ul li{
+    
+    text-align: left;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 20px;
+    border-bottom: 1pt solid rgb(55, 54, 54);
+}
+
+.navigation a{
+    color: aliceblue;
+}
