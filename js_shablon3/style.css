@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.plane{
+    height: 100vh;
+    margin-left: -690px;
+    /* Допиши 2 аттрибута, отвечающих за расположение самолёта */
+}
+
+
+.layer{
+   /* Напиши атрибуты для шторки*/
+   position: fixed;
+   background-color: black;
+   width: 100%;
+}
+
+section{
+    height: 200vh;
+    background: url(./gaiti2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.sec2{
+    height: 100vh;
+    background: url(./gaiti.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.text {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text h2{
+    color: white;
+    font-size: 3em;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.text h2 span {
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 0em;
+    background: url(./gaiti3.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: text;
+    color: transparent;
+}
